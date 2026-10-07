@@ -6,7 +6,6 @@ on:
   watch:
     types: started
   workflow_dispatch:
- on:
   schedule:
     - cron: '0 1 * * *'
       timezone: 'Asia/Shanghai'     # 直接写北京时间,夏令时也不用管
