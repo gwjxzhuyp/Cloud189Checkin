@@ -6,8 +6,10 @@ on:
   watch:
     types: started
   workflow_dispatch:
+ on:
   schedule:
-    - cron: 35 2 * * *
+    - cron: '0 1 * * *'
+      timezone: 'Asia/Shanghai'     # 直接写北京时间,夏令时也不用管
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
